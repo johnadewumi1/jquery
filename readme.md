@@ -80,7 +80,7 @@ $ clear
 $ ls
 $ sudo vi ridiculous-inc.com.conf
 $ cd /var/www
-$ sudo git clone https://github.com/ridiculous-ijquery-todo.git ridic
+$ sudo git clone https://github.com/johnadewumi1/jquery.git john
 $ sudo a2ensite ridiculous-inc.com.conf 
 $ sudo service apache2 restart
 $ sudo apt-get update
@@ -92,7 +92,7 @@ $ sudo apt-get update
 $ sudo apt-get install python-certbot-apache 
 $ clear
 $ sudo certbot --apache
-$ history
+$ history 
 
 
 ## VirtualHost for .com.conf file ##

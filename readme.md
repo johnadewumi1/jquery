@@ -70,3 +70,40 @@ systemctl list-timers
 #Confirm that Certbot worked
 #To confirm that your site is set up properly, visit https://yourwebsite.com/ in your browser and look for the lock icon in the URL bar.
 
+## Commands from initial SSH ##
+
+$ sudo apt update
+$ clear
+$ sudo apt install apache2
+$ cd /etc/apache2/sites-available/
+$ clear
+$ ls
+$ sudo vi ridiculous-inc.com.conf
+$ cd /var/www
+$ sudo git clone https://github.com/ridiculous-ijquery-todo.git ridic
+$ sudo a2ensite ridiculous-inc.com.conf 
+$ sudo service apache2 restart
+$ sudo apt-get update
+$ clear
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository ppa:certbot/certbot
+$ clear
+$ sudo apt-get update
+$ sudo apt-get install python-certbot-apache 
+$ clear
+$ sudo certbot --apache
+$ history
+
+
+## VirtualHost for .com.conf file ##
+
+<virtualhost *:80="">
+    DocumentRoot /var/www/ridic
+    ServerName ridiculous-inc.com
+    <directory "="" var="" www="" ridic"="">
+        allow from all
+        AllowOverride All
+        Order allow,deny
+        Options +Indexes
+    </directory>
+</virtualhost>
